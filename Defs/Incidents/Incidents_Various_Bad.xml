@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>ToxicFallout</defName>
+    <label>toxic fallout</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>IncidentWorker_MakeMapCondition</workerClass>
+    <mapCondition>ToxicFallout</mapCondition>
+    <letterLabel>Toxic fallout</letterLabel>
+    <letterText>A distant chemical fire has released a plume of poison over this entire region.\n\nAny person or creature not under a roof will be slowly sickened by the toxic dust settling out of the atmosphere.\n\nIt will last for anywhere between a few days to over a month.</letterText>
+    <letterType>BadNonUrgent</letterType>
+    <baseChance>0.1</baseChance>
+    <earliestDay>20</earliestDay>
+    <minRefireDays>90</minRefireDays>
+    <minDifficulty>2</minDifficulty>
+    <durationDays>
+      <min>2.5</min>
+      <max>10.5</max>
+    </durationDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>VolcanicWinter</defName>
+    <label>volcanic winter</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>IncidentWorker_MakeMapCondition</workerClass>
+    <mapCondition>VolcanicWinter</mapCondition>
+    <letterLabel>Volcanic winter</letterLabel>
+    <letterText>A distant supervolcano has erupted and begun spewing millions of cubic kilometers of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the sun. Temperatures will drop and plants will suffer for lack of sunlight. It could pass in a few weeks, or it might last many months.</letterText>
+    <letterType>BadNonUrgent</letterType>
+    <baseChance>0.15</baseChance>
+    <earliestDay>30</earliestDay>
+    <minRefireDays>140</minRefireDays>
+    <minDifficulty>2</minDifficulty>
+    <durationDays>
+      <min>7.5</min>
+      <max>40</max>
+    </durationDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Alphabeavers</defName>
+    <label>alphabeavers</label>
+    <targetType>BaseMap</targetType>
+    <workerClass>IncidentWorker_Alphabeavers</workerClass>
+    <baseChance>0.3</baseChance>
+    <minRefireDays>35</minRefireDays>
+    <allowedBiomes>
+      <li>BorealForest</li>
+      <li>TemperateForest</li>
+      <li>TropicalRainforest</li>
+    </allowedBiomes>
+  </IncidentDef>
+
+
+</Defs>

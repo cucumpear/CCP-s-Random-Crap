@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="OrganicProductBase" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+			<Mass>0.03</Mass>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>CrushedStone</defName>
+    <label>crushed stone</label>
+	<thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <description>Finely crushed stone for decoration and soil preparation.</description>
+    <stackLimit>300</stackLimit>
+    <graphicData>
+      <texPath>GardenPaths/Items/CrushedStone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+      <Mass>0.014</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>BasicSubstrate</defName>
+    <label>basic substrate</label>
+    <description>A manufactured substrate that can be used to create basic planting areas.</description>
+    <stackLimit>150</stackLimit>
+    <graphicData>
+      <texPath>GardenPaths/Items/BasicSubstrate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.2</MarketValue>
+      <Mass>0.014</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>EnrichedSubstrate</defName>
+    <label>enriched substrate</label>
+    <description>An enriched manufactured composting base.</description>
+    <stackLimit>150</stackLimit>
+    <graphicData>
+      <texPath>GardenPaths/Items/EnrichedSubstrate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.4</MarketValue>
+      <Mass>0.014</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  
+    
+  <!--  <ThingDef ParentName="OrganicProductBase">
+    <defName>EnrichedCompost</defName>
+    <label>enriched compost</label>
+    <description>Enriched composted organics that can be used to create planting areas.</description>
+    <stackLimit>150</stackLimit>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Hay</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+      <Mass>0.014</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef> -->
+  
+  
+</Defs>

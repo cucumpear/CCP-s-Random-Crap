@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeTenMeds</defName>
+    <label>make ten medkits</label>
+    <description>Make ten medkits.</description>
+    <jobString>Making ten medkits.</jobString>
+	<workSkillLearnFactor>1</workSkillLearnFactor>
+    <workSpeedStat>DrugProductionSpeed</workSpeedStat>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>6000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HerbalMedicine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>HerbalMedicine</li>
+		<li>Neutroamine</li>
+		<li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Medicine>10</Medicine>
+    </products>
+	<skillRequirements>
+        <li>
+          <skill>Medicine</skill>
+          <minLevel>6</minLevel>
+        </li>
+        <li>
+          <skill>Crafting</skill>
+          <minLevel>6</minLevel>
+        </li>
+    </skillRequirements>
+	<researchPrerequisite>MedicineProduction</researchPrerequisite>
+    <workSkill>Medicine</workSkill>
+	<recipeUsers>
+		<li>DrugLab</li>
+	</recipeUsers>
+  </RecipeDef>
+
+</Defs>

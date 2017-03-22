@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>Phytochelys</defName>
+    <label>phytochelys</label>
+    <description>If you think this reptile looks small it must be far away, as the phytochelys is a true behemoth of a tortoise. Big enough to be covered in vegetation.</description>
+    <statBases>
+      <MoveSpeed>0.8</MoveSpeed>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTime>3.5</defaultCooldownTime>
+        <meleeDamageBaseAmount>12</meleeDamageBaseAmount>
+        <meleeDamageDef>Bite</meleeDamageDef>
+        <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggPhytochelysFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>60</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.1</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <race>
+      <body>TurtleLike</body>
+      <baseBodySize>8</baseBodySize>
+      <baseHungerRate>2</baseHungerRate>
+      <baseHealthScale>3</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal</foodType>
+      <leatherInsulation>0.5</leatherInsulation>
+      <wildness>0.95</wildness>
+	  <trainableIntelligence>Advanced</trainableIntelligence>
+	  <wildBiomes>
+        <Desert>0.01</Desert>
+        <AridShrubland>0.015</AridShrubland>
+        <TropicalRainforest>0.002</TropicalRainforest>
+        <TemperateForest>0.04</TemperateForest>
+        <BorealForest>0.02</BorealForest>
+      </wildBiomes>
+      <lifeExpectancy>850</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.8</minAge>
+          <soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+          <soundDeath>Pawn_Tortoise_Death</soundDeath>
+          <soundCall>Pawn_Tortoise_Call</soundCall>
+          <soundAngry>Pawn_Tortoise_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>StandardAnimal</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>Phytochelys</defName>
+    <label>phytochelys</label>
+    <race>Phytochelys</race>
+    <combatPower>650</combatPower>
+    <wildSpawn_EcoSystemWeight>0.8</wildSpawn_EcoSystemWeight>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <drawSize>3</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <drawSize>4.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>4.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
+          <drawSize>7</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.45, 0.45)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+</ThingDefs>

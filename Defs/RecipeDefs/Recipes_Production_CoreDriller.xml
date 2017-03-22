@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>MiningDeepDurasteel</defName>
+		<label>mining deep durasteel</label>
+		<description>mining deep durasteel.</description>
+		<jobString>Mining deep durasteel.</jobString>
+		<workAmount>1500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Durasteel>5</Durasteel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>MiningDeepPhytosteel</defName>
+		<label>mining deep phytosteel</label>
+		<description>mining deep phytosteel.</description>
+		<jobString>Mining deep phytosteel.</jobString>
+		<workAmount>1500</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<Phytosteel>5</Phytosteel>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+</RecipeDefs>

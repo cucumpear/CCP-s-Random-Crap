@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <!-- ================= Sand ================= -->
+  
+  <TerrainDef ParentName="FloorBase">
+    <defName>DecorativeSand</defName>
+    <label>decorative sand</label>
+    <texturePath>GardenPaths/Terrain/DecorativeSand</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <RenderPrecedence>350</RenderPrecedence>
+    <PathCost>3</PathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>800</WorkToBuild>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <TerrainFilthDef>FilthSand</TerrainFilthDef>
+    <Fertility>0.06</Fertility>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+	<CostList>
+      <CrushedStone>7</CrushedStone>
+    </CostList>
+  </TerrainDef>
+  
+  <!-- ================= Soil ================= -->
+  <TerrainDef ParentName="FloorBase">
+    <defName>DugOutDirt</defName>
+    <label>dug out dirt</label>
+	<description>A stony surface that has been prepared for future soil placement.</description>
+    <texturePath>GardenPaths/Terrain/DugOutDirt</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <RenderPrecedence>382</RenderPrecedence>
+    <PathCost>3</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>SmoothHard</terrainAffordanceNeeded>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0.1</Fertility>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+	<CostList>
+      <CrushedStone>5</CrushedStone>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBase">
+    <defName>PreparedDirt</defName>
+    <label>prepared dirt</label>
+	<description>Loose dirt that has been prepared for future soil placement.</description>
+    <texturePath>GardenPaths/Terrain/PreparedDirt</texturePath>
+    <EdgeType>Fade</EdgeType>
+    <RenderPrecedence>383</RenderPrecedence>
+    <PathCost>3</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0.1</Fertility>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+	<CostList>
+      <CrushedStone>5</CrushedStone>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="FloorBase">
+    <defName>SoilGardenPlot</defName>
+    <label>basic contained soil</label>
+	<description>Good soil carefully contained to prevent messes.</description>
+    <texturePath>GardenPaths/Terrain/SoilGardenPlot</texturePath>
+    <EdgeType>Hard</EdgeType>
+    <RenderPrecedence>384</RenderPrecedence>
+    <PathCost>2</PathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>1000</WorkToBuild>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1</Fertility>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+	<CostList>
+      <BasicSubstrate>10</BasicSubstrate>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="FloorBase">
+    <defName>SoilGardenPlotRich</defName>
+    <label>rich contained soil</label>
+	<description>Enriched soil carefully contained to prevent messes.</description>
+    <texturePath>GardenPaths/Terrain/SoilGardenPlotRich</texturePath>
+    <EdgeType>Hard</EdgeType>
+    <RenderPrecedence>385</RenderPrecedence>
+    <PathCost>2</PathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+	  <WorkToBuild>1200</WorkToBuild>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+	<terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.75</Fertility>
+    <AcceptTerrainSourceFilth>False</AcceptTerrainSourceFilth>
+    <TakeFootprints>True</TakeFootprints>
+	<acceptFilth>false</acceptFilth>
+	<CostList>
+      <EnrichedSubstrate>15</EnrichedSubstrate>
+    </CostList>
+  </TerrainDef>
+  
+  
+</TerrainDefs>

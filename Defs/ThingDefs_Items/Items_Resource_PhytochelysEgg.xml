@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggPhytochelysFertilized</defName>
+    <label>phytochelys egg (fert.)</label>
+    <description>Fertilized phytochelys egg. If all goes well, it should hatch into a baby phytochelys. It can be eaten raw, but it's better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+      <color>(239,234,215)</color>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>400.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaysToHatch>300</hatcherDaysToHatch>
+        <hatcherPawn>Phytochelys</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+</Defs>

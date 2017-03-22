@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>IncubatorLampS</defName>
+    <label>small connecting incubator lamp</label>
+    <thingClass>Building_Heater</thingClass>
+	<graphicData>
+      <texPath>IncubatorLamps/IncubatorLampD_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Custom8</li>
+      </linkFlags>
+      <shaderType>Transparent</shaderType>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>IncubatorLamps/IncubatorLampD_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>IncubatorLamps/IncubatorLampD_MenuIcon</uiIconPath>
+	<building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>40</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <WorkToBuild>60</WorkToBuild>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Rare</tickerType>
+    <description>A small heating lamp for incubating eggs. Adjacient lamps will connect.</description>
+    <costList>
+      <Steel>30</Steel>
+      <Component>1</Component>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+	    <transmitsPower>true</transmitsPower>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>8</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>((236,88,0,0))</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>IncubatorLampL</defName>
+    <label>large incubator lamp</label>
+    <thingClass>Building_Heater</thingClass>
+	<graphicData>
+       <texPath>IncubatorLamps/IncubatorLampR</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+       <shaderType>Transparent</shaderType>
+    </graphicData>
+    <blueprintGraphicData>
+    <texPath>IncubatorLamps/IncubatorLampR</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>IncubatorLamps/IncubatorLampR_MenuIcon</uiIconPath>
+ 	<building>
+	 <isInert>true</isInert>
+      <ignoreNeedsPower>false</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+	<minifiedDef>MinifiedFurniture</minifiedDef>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <passability>Standable</passability>
+    <pathCost>40</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <statBases>
+      <WorkToBuild>60</WorkToBuild>
+      <MaxHitPoints>20</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <description>A large heating lamp for incubating eggs.</description>
+    <costList>
+      <Steel>105</Steel>
+      <Component>3</Component>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>25</energyPerSecond>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>((236,88,0,0))</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  
+</Buildings>

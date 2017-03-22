@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>LightColumn</defName>
+    <label>light column</label>
+    <description>Lights an area brightly enough to grow crops, consumes a large amount of power. Can also support a roof.</description>
+    <thingClass>Building_SunLamp</thingClass>
+    <selectable>true</selectable>
+    <altitudeLayer>Building</altitudeLayer>
+    <category>Building</category>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <designationCategory>Furniture</designationCategory>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>LightColumn/LightColumn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+      <Mass>6</Mass>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <Component>2</Component>
+    </costList>
+	<costStuffCount>15</costStuffCount>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <coversFloor>true</coversFloor>
+    <holdsRoof>true</holdsRoof>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <passability>Impassable</passability>
+    <comps>
+	  <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <overlightRadius>7.0</overlightRadius>
+        <glowRadius>14</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>1200</basePowerConsumption>
+      </li>
+    </comps>
+    <specialDisplayRadius>5.8</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <drawGUIOverlay>true</drawGUIOverlay>
+	</ThingDef>
+  
+  
+</Buildings>

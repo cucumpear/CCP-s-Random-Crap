@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+    
+</TerrainDefs>

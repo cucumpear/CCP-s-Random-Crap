@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+  <ThingDef Name="FurnitureBase" ParentName="BuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <DesignationCategory>Furniture</DesignationCategory>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef Name="ArtableFurnitureBase" ParentName="FurnitureBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_Furniture</nameMaker>
+        <descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="FurnitureBase">
+    <defName>PaddedStool</defName>
+    <label>padded stool</label>
+    <graphicData>
+      <texPath>PaddedStool/PaddedStool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>4</Beauty>
+      <Comfort>0.6</Comfort>
+    </statBases>
+    <description>A padded stool on which to sit.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <pathCost>30</pathCost>
+    <fillPercent>0.30</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+
+ 
+  <ThingDef ParentName="FurnitureBase">
+    <defName>PaddedBench</defName>
+    <label>padded bench</label>
+    <graphicData>
+      <texPath>PaddedBench/PaddedBench</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <drawSize>(2.4,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.05,1.95,1)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+	 <Size>(2,1)</Size>
+    <statBases>
+      <MaxHitPoints>95</MaxHitPoints>
+      <WorkToBuild>1100</WorkToBuild>
+      <Mass>6</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>5</Beauty>
+      <Comfort>0.6</Comfort>
+    </statBases>
+    <description>A padded bench on which to sit.</description>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>45</costStuffCount>
+    <pathCost>30</pathCost>
+    <fillPercent>0.30</fillPercent>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+  </ThingDef>
+  
+</Buildings>
