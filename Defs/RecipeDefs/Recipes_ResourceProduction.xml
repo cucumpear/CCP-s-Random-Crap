@@ -475,6 +475,18 @@
         <li>Leathers</li>
       </categories>
     </fixedIngredientFilter>
+	<defaultIngredientFilter>
+	  <thingDefs>
+        <li>Steel</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+	  <categories>
+        <li>Leathers</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>SynthLeather</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
   </RecipeDef>
    
     <!--=============================== SynthWool ================================-->
@@ -530,6 +542,23 @@
         <li>Textiles</li>
       </categories>
     </fixedIngredientFilter>
+	<defaultIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+	  <categories>
+        <li>Textiles</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+        <li>SynthWool</li>
+      </exceptedThingDefs>
+	  <exceptedCategories>
+		<li>Leathers</li>
+	  </exceptedCategories>
+    </defaultIngredientFilter>
   </RecipeDef>
   
   

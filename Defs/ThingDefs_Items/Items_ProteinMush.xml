@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+  <ThingDef ParentName="ResourceBase">
+	<defName>ProteinMush</defName>
+	<label>protein mush</label>
+	<description>A blend of processed meats and protein-rich plant foods.</description>
+    <graphicData>
+		<texPath>Things/Item/ProteinMush</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>0.08</Mass>
+      <DeteriorationRate>10</DeteriorationRate>
+      <MarketValue>1</MarketValue>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+	<ingestible>
+		<foodType>Meal, Processed</foodType>
+		<preferability>DesperateOnly</preferability>
+		<nutrition>0.15</nutrition>
+   		<ingestSound>Meal_Eat</ingestSound>
+        <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	</ingestible>
+	<thingCategories>
+		<li>MeatRaw</li>
+	</thingCategories>
+	</ThingDef>
+ 
+  
+</Resources>

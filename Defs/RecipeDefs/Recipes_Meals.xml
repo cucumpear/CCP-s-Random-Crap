@@ -249,6 +249,45 @@
     <researchPrerequisite>Pemmican</researchPrerequisite>
   </RecipeDef>
 
-
+ <RecipeDef Name="MakeProteinMush">
+    <defName>MakeProteinMush</defName>
+    <label>make protein mush</label>
+    <description>Make protein mush, a combination of meats and other protein sources. Can be used as any other meat.</description>
+    <jobString>Making protein mush.</jobString>
+    <recipeUsers>
+		<li>TableButcher</li>
+    </recipeUsers>
+    <workAmount>500</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <products>
+      <ProteinMush>2</ProteinMush>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
 
 </RecipeDefs>
