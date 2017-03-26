@@ -422,6 +422,60 @@
       </products>
 	</RecipeDef>
 	
+    <RecipeDef Name="MakeHighDensityComposite">
+    <defName>MakeHighDensityComposite</defName>
+    <label>make high density composite</label>
+    <description>Create high density composite.</description>
+    <jobString>Making high density composite.</jobString>
+    <workAmount>1750</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+	<recipeUsers>
+		<li>Refinery</li>
+	</recipeUsers>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+		<filter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</filter>
+		<count>2</count>
+      </li>
+	</ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Chemfuel</li>
+      </thingDefs>
+		<categories>
+			<li>StoneChunks</li>
+		</categories>
+    </fixedIngredientFilter>
+	<products>
+         <HighDensityComposite>20</HighDensityComposite>
+    </products>
+  </RecipeDef>
+
+  
    <!--=============== SynthLeather  ====================-->
 
    	  <RecipeDef>

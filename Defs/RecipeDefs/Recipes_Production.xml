@@ -9,9 +9,11 @@
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
     <workAmount>8000</workAmount>
     <targetCountAdjustment>5</targetCountAdjustment>
+	<recipeUsers>
+		<li>TableMachining</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -41,6 +43,9 @@
     <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+	<recipeUsers>
+		<li>ComponentAssemblyBench</li>
+	</recipeUsers>
     <workAmount>50000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>

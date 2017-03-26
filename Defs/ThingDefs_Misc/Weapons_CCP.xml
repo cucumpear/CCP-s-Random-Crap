@@ -152,7 +152,7 @@
 			<AccuracyShort>0.70</AccuracyShort>
 			<AccuracyMedium>0.76</AccuracyMedium>
 			<AccuracyLong>0.80</AccuracyLong>
-			<RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>ChargedShot</researchPrerequisite>
@@ -173,8 +173,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<projectileDef>Bullet_KnockOutRifle</projectileDef>
-				<warmupTime>0.5</warmupTime>
-				<range>35</range>
+				<warmupTime>0.9</warmupTime>
+				<range>40</range>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<burstShotCount>3</burstShotCount>
 				<soundCast>ShotChargeRifle</soundCast>
@@ -582,6 +582,7 @@
         <meleeDamageDef>Cut</meleeDamageDef>
       </li>
     </verbs>
+	<techLevel>Spacer</techLevel>
   </ThingDef>
   
 </ThingDefs>

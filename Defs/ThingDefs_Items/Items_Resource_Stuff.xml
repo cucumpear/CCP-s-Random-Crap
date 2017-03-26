@@ -601,6 +601,55 @@
     </stuffProps>
   </ThingDef>
   
+   <!--=============== CompositeStone ====================-->
+
+
+   <ThingDef ParentName="ResourceBase" Name="HighDensityComposite">
+    <defName>HighDensityComposite</defName>
+    <label>high density composite</label>
+    <description>Blocks of high tech ultra dense composite. Not much to look at, but amazingly sturdy.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(46,52,56)</color>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>9</MarketValue>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.3</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>Composites</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToMake>300</WorkToMake>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <statFactors>
+        <Beauty>1</Beauty>
+        <MarketValue>2</MarketValue>
+        <MaxHitPoints>10</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToMake>5</WorkToMake>
+        <DoorOpenSpeed>1</DoorOpenSpeed>
+        <BedRestEffectiveness>1</BedRestEffectiveness>
+        <MeleeWeapon_Cooldown>1.2</MeleeWeapon_Cooldown>
+      </statFactors>
+	  <color>(46,52,56)</color>
+      <soundImpactStuff>BulletImpactGround</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>high density composite</stuffAdjective>
+    </stuffProps>
+  </ThingDef>
   
   <!--=============== SynthLeather  ====================-->
 

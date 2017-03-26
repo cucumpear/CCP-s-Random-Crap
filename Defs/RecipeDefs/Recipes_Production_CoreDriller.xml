@@ -6,7 +6,7 @@
 		<label>mining deep durasteel</label>
 		<description>mining deep durasteel.</description>
 		<jobString>Mining deep durasteel.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>800</workAmount>
 		<effectWorking>CutStone</effectWorking>
 		<workSkillLearnFactor>0.2</workSkillLearnFactor>
 		<products>
@@ -24,7 +24,7 @@
 		<label>mining deep phytosteel</label>
 		<description>mining deep phytosteel.</description>
 		<jobString>Mining deep phytosteel.</jobString>
-		<workAmount>1500</workAmount>
+		<workAmount>800</workAmount>
 		<effectWorking>CutStone</effectWorking>
 		<workSkillLearnFactor>0.2</workSkillLearnFactor>
 		<products>
@@ -36,5 +36,92 @@
 		</recipeUsers>
 	</RecipeDef>
 	
+		<RecipeDef>
+		<defName>MiningDeepMarble</defName>
+		<label>mining deep marble</label>
+		<description>mining deep marble.</description>
+		<jobString>Mining deep marble.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksMarble>1</BlocksMarble>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MiningDeepSlate</defName>
+		<label>mining deep slate</label>
+		<description>mining deep slate.</description>
+		<jobString>Mining deep slate.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksSlate>1</BlocksSlate>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>MiningDeepLimestone</defName>
+		<label>mining deep limestone</label>
+		<description>mining deep limestone.</description>
+		<jobString>Mining deep limestone.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksLimestone>1</BlocksLimestone>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+
+		
+	<RecipeDef>
+		<defName>MiningDeepSandstone</defName>
+		<label>mining deep sandstone</label>
+		<description>mining deep sandstone.</description>
+		<jobString>Mining deep sandstone.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksSandstone>1</BlocksSandstone>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>MiningDeepGranite</defName>
+		<label>mining deep granite</label>
+		<description>mining deep granite.</description>
+		<jobString>Mining deep granite.</jobString>
+		<workAmount>800</workAmount>
+		<effectWorking>CutStone</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<products>
+			<BlocksGranite>1</BlocksGranite>
+		</products>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>
+	</RecipeDef>
+
 	
 </RecipeDefs>
