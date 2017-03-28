@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>ArmouredPowerConduit</defName>
+    <label>armoured power conduit</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/ArmouredConduit_Atlas/ArmouredPowerConduit_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Transmitter</linkType>
+      <linkFlags>
+        <li>PowerConduit</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.35,1,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <blueprintGraphicData>
+      <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+    <uiIconPath>Things/Building/ArmouredConduit_Atlas/ArmouredPowerConduit_MenuIcon</uiIconPath>
+    <building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <isEdifice>false</isEdifice>
+    </building>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <description>A set of armoured and buried electrical cables for moving power around. Can be placed under walls and other buildings.</description>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <costList>
+      <Steel>3</Steel>
+      <Plasteel>3</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_Conduit</li>
+    </placeWorkers>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="LampBase">
+    <defName>ArmouredPathLamp</defName>
+    <label>armoured path lamp</label>
+	<description>A small armoured lamp for lighting up garden paths and small areas.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ArmouredPathLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(0.5,0.5)</drawSize>
+    </graphicData>
+	<designationCategory>Furniture</designationCategory>
+    <costList>
+      <Steel>15</Steel>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>8</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+ 
+   <ThingDef ParentName="LampBase">
+    <defName>ArmouredLampPost</defName>
+    <label>armoured lamp post</label>
+	<description>An armoured light, safe for outdoor use.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ArmouredLampPost/ArmouredLampPost</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <rotatable>true</rotatable>
+	<designationCategory>Furniture</designationCategory>
+    <costList>
+      <Steel>20</Steel>
+      <Component>1</Component>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Mass>8</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+
+     <ThingDef ParentName="LampBase">
+    <defName>ArmouredHPLampPost</defName>
+    <label>high-powered armoured lamp post</label>
+	<description>An armoured light, safe for outdoor use. Uses a lot of power but light up a large area.</description>
+    <graphicData>
+      <texPath>Things/Building/Furniture/ArmouredHPLampPost</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+	<designationCategory>Furniture</designationCategory>
+    <costList>
+      <Steel>30</Steel>
+      <Component>1</Component>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>50</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>35</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Buildings>
